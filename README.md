@@ -4,7 +4,11 @@ Android App for Dominoes match points counter
 
 ## Introduction
 
-Mobile Hybrid Application for Dominoes mathch points counting. This app was developed as a PWA using Onsen UI and Tulipan.js. Built with Monaca.
+Mobile Hybrid Application for Dominoes mathch points counting. This app was developed as a PWA using Onsen UI and Tulipan.js. Built with Monaca. This app can be built with Apache Cordova.
+
+## Testing in the Browser
+
+You can use any static file server tu execute the *www* folder as root, and test this application with Chrome as a mobile view.
 
 ## Screenhots
 
