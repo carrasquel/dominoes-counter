@@ -1,0 +1,67 @@
+<div>
+  <div class="toolbar toolbar--material">
+    <div class="toolbar__center toolbar--material__center">
+      Dominoes Counter
+    </div>
+  </div>
+  <div style="height: 100px; padding: 1px 0 0 0;">
+    <div class="card card--material">
+      <div class="card__content card--material__content">Set your game, fill in the following.</div>
+    </div>
+  </div>
+  
+  <ul class="list list--inset">
+    <li class="list-item list--inset__item">
+      <div class="list-item__center">
+        <ons-row vertical-align="center">
+          <ons-col>
+            Max. points: 
+          </ons-col>
+          <ons-col vertical-align="center">
+            <select class="select-input select-input--material" tp-model="total">
+              <option>50</option>
+              <option>100</option>
+              <option>150</option>
+              <option>200</option>
+            </select>
+          </ons-col>
+        </ons-row>
+      </div>
+    </li>
+    
+    <li class="list-item list--inset__item">
+      <div class="list-item__center">
+        <ons-row vertical-align="center">
+          <ons-col>
+            Team 1: 
+          </ons-col>
+          <ons-col vertical-align="center">
+            <input class="text-input text-input--material" placeholder="team 1" type="text" required tp-model="team1">
+          </ons-col>
+        </ons-row>
+      </div>
+    </li>
+
+    <li class="list-item list--inset__item">
+      <div class="list-item__center">
+        <ons-row vertical-align="center">
+          <ons-col>
+            Team 2: 
+          </ons-col>
+          <ons-col vertical-align="center">
+            <input class="text-input text-input--material" placeholder="team 2" type="text" required tp-model="team2">
+          </ons-col>
+        </ons-row>
+      </div>
+    </li>
+
+  </ul>
+
+  <br>
+
+  <button class="button--large--cta" style="width: 95%; margin: 0 auto;" tp-on:click="validate">GO!</button>
+  <div class="toast" tp-if="showToast">
+    <div class="toast__message">{{ toastMessage }}</div>
+    <button class="toast__button" tp-on:click="accept">OK</button>
+  </div>
+</div>

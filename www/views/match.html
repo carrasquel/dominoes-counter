@@ -1,0 +1,66 @@
+<div>
+  <div class="toolbar toolbar--material">
+    <div class="toolbar__center toolbar--material__center">
+      Dominoes Counter
+    </div>
+  </div>
+  <div style="height: 60px; padding: 1px 0 0 0;">
+    <div class="card card--material">
+      <div class="card__content card--material__content">Score to win: <b>{{ total }}</b></div>
+    </div>
+  </div>
+  
+  <br>
+
+  <ons-row vertical-align="center">
+    <ons-col>
+      <ul class="list list--inset">
+        <li class="header">
+          {{ team1 }}
+        </li>
+        <li class="list-item list--inset__item" tp-for="pair in team1Scores">
+          {{ pair[0] }} - {{ pair[1] }}
+        </li>
+      </ul>
+      
+    </ons-col>
+    <ons-col vertical-align="center">
+      <ul class="list list--inset">
+        <li class="header">
+          {{ team2 }}
+        </li>
+        <li class="list-item list--inset__item" tp-for="pair in team2Scores">
+          {{ pair[0] }} - {{ pair[1] }}
+        </li>
+      </ul>
+      
+    </ons-col>
+  </ons-row>
+  
+  <br>
+
+  <button class="button--large--cta" style="width: 95%; margin: 0 auto;" tp-on:click="addPoints">Add Points</button>
+
+  <br>
+  <br>
+
+  <button class="button--large--cta" style="width: 95%; margin: 0 auto;" tp-on:click="quit">Quit Game</button>
+
+  <div tp-if="showQuit">
+    <div class="alert-dialog-mask alert-dialog-mask--material"></div>
+    <div class="alert-dialog alert-dialog--material">
+      <div class="alert-dialog-container alert-dialog-container--material">
+        <div class="alert-dialog-title alert-dialog-title--material">
+          Quit Game
+        </div>
+        <div class="alert-dialog-content alert-dialog-content--material">
+          Are you sure you want to quit this match?
+        </div>
+        <div class="alert-dialog-footer alert-dialog-footer--material">
+          <button class="alert-dialog-button alert-dialog-button--material" tp-on:click="quitMatch">OK</button>
+          <button class="alert-dialog-button alert-dialog-button--material" tp-on:click="resumeMatch">CANCEL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

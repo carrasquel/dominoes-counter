@@ -1,0 +1,50 @@
+<div>
+  <div class="toolbar toolbar--material">
+    <div class="toolbar__center toolbar--material__center">
+      Dominoes Counter
+    </div>
+  </div>
+
+  <div style="height: 100px; padding: 1px 0 0 0;">
+    <div class="card card--material">
+      <div class="card__content card--material__content">Add points to hand winner.</div>
+    </div>
+  </div>
+
+  <ul class="list list--inset">
+    <li class="list-item list--inset__item">
+      <div class="list-item__center">
+        <ons-row vertical-align="center">
+          <ons-col>
+            Winner team: 
+          </ons-col>
+          <ons-col vertical-align="center">
+            <select class="select-input select-input--material" tp-model="winner">
+              <option value="team1">{{ team1 }}</option>
+              <option value="team2">{{ team2 }}</option>
+            </select>
+          </ons-col>
+        </ons-row>
+      </div>
+    </li>
+    
+    <li class="list-item list--inset__item">
+      <div class="list-item__center">
+        <ons-row vertical-align="center">
+          <ons-col>
+            Score Points ({{ score }}): 
+          </ons-col>
+          <ons-col vertical-align="center" width="70%">
+            <div class="range range--material" style="width: 90%">
+              <input type="range" class="range__input range--material__input" min="0" max="100" tp-model="score">
+          </ons-col>
+        </ons-row>
+      </div>
+    </li>
+
+  </ul>
+
+  <br>
+
+  <button class="button--large--cta" style="width: 95%; margin: 0 auto;" tp-on:click="addScore">Add Score</button>
+</div>
