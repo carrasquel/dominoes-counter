@@ -10,6 +10,10 @@ Mobile Hybrid Application for Dominoes mathch points counting. This app was deve
 
 You can use any static file server tu execute the *www* folder as root, and test this application with Chrome as a mobile view.
 
+## Installing on Android
+
+You can also install the debug application in your Android deviced from the Android Package found in the *dist* directory.
+
 ## Screenhots
 
 [![Screenshot1](https://raw.githubusercontent.com/carrasquel/dominoes-counter/master/images/screen1.png)](https://raw.githubusercontent.com/carrasquel/dominoes-counter/master/images/screen1.png)
