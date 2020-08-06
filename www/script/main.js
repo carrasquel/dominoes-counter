@@ -174,6 +174,8 @@ var counter_app = new Tulipan({
 
     addScore: function(){
       var scores = [];
+      this.score = parseInt(this.score);
+
       if (this.winner == "team1"){
         scores = this.$store.get("team1Scores");
       } else {
@@ -204,6 +206,7 @@ var counter_app = new Tulipan({
         }
         this.$router.navigate("/gameover");
       } else {
+        this.score = 0;
         this.$router.navigate("/match");
       }
 
