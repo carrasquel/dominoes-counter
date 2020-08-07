@@ -118,3 +118,17 @@ nav:not(.mm-menu) {
 	overflow-y: scroll;
 	height: 93%;
 }
+
+/* always present */
+.expand-transition {
+	transition: all .3s ease;
+	height: 30px;
+	padding: 10px;
+}
+/* .expand-enter defines the starting state for entering */
+/* .expand-leave defines the ending state for leaving */
+.expand-enter, .expand-leave {
+	height: 0;
+	padding: 0 10px;
+	opacity: 0;
+}
