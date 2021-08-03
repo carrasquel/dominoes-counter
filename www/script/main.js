@@ -3,8 +3,8 @@
 var main_app = new Tulipan({
 
   template: {
-      url: "views/main.html",
-      async: false
+    url: "views/main.html",
+    async: false
   },
   
   route: "/",
@@ -45,18 +45,18 @@ var main_app = new Tulipan({
 var settings_app = new Tulipan({
 
   template: {
-      url: "views/settings.html",
-      async: false
+    url: "views/settings.html",
+    async: false
   },
   
   route: "/settings",
 
   data: {
-      team1: "",
-      team2: "",
-      total: 100,
-      showToast: false,
-      toastMessage: ""
+    team1: "",
+    team2: "",
+    total: 100,
+    showToast: false,
+    toastMessage: ""
   },
 
   methods: {
@@ -100,20 +100,20 @@ var settings_app = new Tulipan({
 var match_app = new Tulipan({
 
   template: {
-      url: "views/match.html",
-      async: false
+    url: "views/match.html",
+    async: false
   },
   
   route: "/match",
 
   data: {
-      team1: "",
-      team2: "",
-      team1Scores: [],
-      team2Scores: [],
-      total: 0,
+    team1: "",
+    team2: "",
+    team1Scores: [],
+    team2Scores: [],
+    total: 0,
 
-      showQuit: false
+    showQuit: false
   },
 
   methods: {
@@ -151,8 +151,8 @@ var match_app = new Tulipan({
 var counter_app = new Tulipan({
 
   template: {
-      url: "views/counter.html",
-      async: false
+    url: "views/counter.html",
+    async: false
   },
   
   route: "/counter",
@@ -217,8 +217,8 @@ var counter_app = new Tulipan({
 var gameover_app = new Tulipan({
 
   template: {
-      url: "views/gameover.html",
-      async: false
+    url: "views/gameover.html",
+    async: false
   },
   
   route: "/gameover",

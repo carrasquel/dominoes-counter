@@ -8,6 +8,12 @@
     "dev": "browser-sync start --no-open -s www/ --watch --port 8080 --ui-port 8081"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.26.7",
+    "cordova-android": "^9.1.0"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
   }
 }
